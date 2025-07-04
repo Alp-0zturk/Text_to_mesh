@@ -1,0 +1,58 @@
+{
+  "name": "test_unity_lake_surrounded_by_terrain",
+  "visual_mesh": "test_unity_lake_surrounded_by_terrain.obj",
+  "collision_mesh": "test_unity_lake_surrounded_by_terrain_collision.obj",
+  "material": {
+    "name": "WaterMaterial",
+    "shader": "Standard",
+    "color": [
+      0.0,
+      0.3,
+      0.8,
+      0.8
+    ],
+    "metallic": 0.0,
+    "smoothness": 1.0
+  },
+  "physics_material": {
+    "name": "WaterPhysicsMaterial",
+    "friction": 0.1,
+    "bounciness": 0.0,
+    "frictionCombine": "Average",
+    "bounceCombine": "Average"
+  },
+  "transform": {
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  "components": {
+    "MeshRenderer": {
+      "enabled": true,
+      "material": "WaterMaterial"
+    },
+    "MeshCollider": {
+      "enabled": true,
+      "convex": true,
+      "isTrigger": false,
+      "physicsMaterial": "WaterPhysicsMaterial"
+    },
+    "Rigidbody": {
+      "enabled": false,
+      "isKinematic": true,
+      "useGravity": false
+    }
+  }
+}

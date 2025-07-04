@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<jed>
+<effect name="VertexColorShader">
+    <technique>
+        <pass>
+            <vertex>
+                <![CDATA[
+                uniform mat4 gl_ModelViewProjectionMatrix;
+                uniform mat3 gl_NormalMatrix;
+                attribute vec3 gl_Vertex;
+                attribute vec3 gl_Normal;
+                attribute vec4 gl_Color;
+                
+                varying vec3 vNormal;
+                varying vec4 vColor;
+                
+                void main()
+                {
+                    gl_Position = gl_ModelViewProjectionMatrix * vec4(gl_Vertex, 1.0);
+                    vNormal = normalize(gl_NormalMatrix * gl_Normal);
+                    vColor = gl_Color;
+                }
+                ]]>
+            </vertex>
+            
+            <fragment>
+                <![CDATA[
+                varying vec3 vNormal;
+                varying vec4 vColor;
+                
+                void main()
+                {
+                    // Simple lighting
+                    vec3 lightDir = normalize(vec3(1.0, 1.0, 1.0));
+                    float diff = max(dot(normalize(vNormal), lightDir), 0.3);
+                    
+                    vec3 finalColor = vColor.rgb * diff;
+                    gl_FragColor = vec4(finalColor, vColor.a);
+                }
+                ]]>
+            </fragment>
+        </pass>
+    </technique>
+</effect>
+</jed> 

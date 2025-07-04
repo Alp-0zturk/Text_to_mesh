@@ -1,0 +1,153 @@
+{
+  "name": "GeneratedTerrainScene",
+  "description": "Unity scene with procedurally generated terrain and environments",
+  "objects": [
+    {
+      "name": "Alpine Mountain",
+      "mesh_file": "alpine_mountain.obj",
+      "collision_file": "alpine_mountain_collision.obj",
+      "material": "rock",
+      "physics_material": "rock",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "stats": {
+        "vertices": 2601,
+        "collision_vertices": 61,
+        "confidence": 0.38113105297088623
+      }
+    },
+    {
+      "name": "Dense Forest",
+      "mesh_file": "dense_forest.obj",
+      "collision_file": "dense_forest_collision.obj",
+      "material": "forest",
+      "physics_material": "grass",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "stats": {
+        "vertices": 10100,
+        "collision_vertices": 165,
+        "confidence": 0.4391480088233948
+      }
+    },
+    {
+      "name": "Desert Oasis",
+      "mesh_file": "desert_oasis.obj",
+      "collision_file": "desert_oasis_collision.obj",
+      "material": "sand",
+      "physics_material": "sand",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "stats": {
+        "vertices": 3286810,
+        "collision_vertices": 3276894,
+        "confidence": 0.2707875669002533
+      }
+    },
+    {
+      "name": "Crystal Lake",
+      "mesh_file": "crystal_lake.obj",
+      "collision_file": "crystal_lake_collision.obj",
+      "material": "water",
+      "physics_material": "water",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "stats": {
+        "vertices": 10004,
+        "collision_vertices": 97,
+        "confidence": 0.3402932286262512
+      }
+    },
+    {
+      "name": "Rolling Hills",
+      "mesh_file": "rolling_hills.obj",
+      "collision_file": "rolling_hills_collision.obj",
+      "material": "terrain",
+      "physics_material": "grass",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "stats": {
+        "vertices": 10000,
+        "collision_vertices": 81,
+        "confidence": 0.2521218955516815
+      }
+    }
+  ],
+  "materials": {},
+  "physics_materials": {}
+}

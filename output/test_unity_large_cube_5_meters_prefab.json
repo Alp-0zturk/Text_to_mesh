@@ -1,0 +1,58 @@
+{
+  "name": "test_unity_large_cube_5_meters",
+  "visual_mesh": "test_unity_large_cube_5_meters.obj",
+  "collision_mesh": "test_unity_large_cube_5_meters_collision.obj",
+  "material": {
+    "name": "DefaultMaterial",
+    "shader": "Standard",
+    "color": [
+      0.5,
+      0.5,
+      0.5,
+      1.0
+    ],
+    "metallic": 0.0,
+    "smoothness": 0.5
+  },
+  "physics_material": {
+    "name": "DefaultPhysicsMaterial",
+    "friction": 0.6,
+    "bounciness": 0.0,
+    "frictionCombine": "Average",
+    "bounceCombine": "Average"
+  },
+  "transform": {
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  "components": {
+    "MeshRenderer": {
+      "enabled": true,
+      "material": "DefaultMaterial"
+    },
+    "MeshCollider": {
+      "enabled": true,
+      "convex": true,
+      "isTrigger": false,
+      "physicsMaterial": "DefaultPhysicsMaterial"
+    },
+    "Rigidbody": {
+      "enabled": false,
+      "isKinematic": true,
+      "useGravity": false
+    }
+  }
+}

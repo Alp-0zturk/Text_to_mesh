@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<jed>
+<effect name="SimpleVertexColor">
+    <technique>
+        <pass>
+            <vertex>
+                <![CDATA[
+                uniform mat4 gl_ModelViewProjectionMatrix;
+                attribute vec3 gl_Vertex;
+                attribute vec4 gl_Color;
+                
+                varying vec4 vertexColor;
+                
+                void main()
+                {
+                    gl_Position = gl_ModelViewProjectionMatrix * vec4(gl_Vertex, 1.0);
+                    vertexColor = gl_Color;
+                }
+                ]]>
+            </vertex>
+            
+            <fragment>
+                <![CDATA[
+                varying vec4 vertexColor;
+                
+                void main()
+                {
+                    gl_FragColor = vertexColor;
+                }
+                ]]>
+            </fragment>
+        </pass>
+    </technique>
+</effect>
+</jed> 

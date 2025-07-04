@@ -1,0 +1,58 @@
+{
+  "name": "rolling_hills",
+  "visual_mesh": "rolling_hills.obj",
+  "collision_mesh": "rolling_hills_collision.obj",
+  "material": {
+    "name": "TerrainMaterial",
+    "shader": "Standard",
+    "color": [
+      0.3,
+      0.6,
+      0.3,
+      1.0
+    ],
+    "metallic": 0.0,
+    "smoothness": 0.3
+  },
+  "physics_material": {
+    "name": "GrassPhysicsMaterial",
+    "friction": 0.8,
+    "bounciness": 0.1,
+    "frictionCombine": "Average",
+    "bounceCombine": "Average"
+  },
+  "transform": {
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  "components": {
+    "MeshRenderer": {
+      "enabled": true,
+      "material": "TerrainMaterial"
+    },
+    "MeshCollider": {
+      "enabled": true,
+      "convex": true,
+      "isTrigger": false,
+      "physicsMaterial": "GrassPhysicsMaterial"
+    },
+    "Rigidbody": {
+      "enabled": false,
+      "isKinematic": true,
+      "useGravity": false
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "test_unity_tall_mountain_peak",
+  "visual_mesh": "test_unity_tall_mountain_peak.obj",
+  "collision_mesh": "test_unity_tall_mountain_peak_collision.obj",
+  "material": {
+    "name": "RockMaterial",
+    "shader": "Standard",
+    "color": [
+      0.5,
+      0.5,
+      0.5,
+      1.0
+    ],
+    "metallic": 0.1,
+    "smoothness": 0.2
+  },
+  "physics_material": {
+    "name": "RockPhysicsMaterial",
+    "friction": 0.4,
+    "bounciness": 0.2,
+    "frictionCombine": "Average",
+    "bounceCombine": "Average"
+  },
+  "transform": {
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  "components": {
+    "MeshRenderer": {
+      "enabled": true,
+      "material": "RockMaterial"
+    },
+    "MeshCollider": {
+      "enabled": true,
+      "convex": true,
+      "isTrigger": false,
+      "physicsMaterial": "RockPhysicsMaterial"
+    },
+    "Rigidbody": {
+      "enabled": false,
+      "isKinematic": true,
+      "useGravity": false
+    }
+  }
+}
